@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{!-- To use navbar template that is stored in partials --}}
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" name="" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">DayName</p>
+                        <p id="today_date">Date</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Todays weather conditions!!</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp">Temp : <span id="temp_real_val">0</span><sup>o</sup>C</p>
+                            <p >Status : <span id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></span></i></p>
+                            <p >Description : <span id="description"> 0 </span></p>
+                            <p >Humidity : <span id="humidity"> 0 </span></p>
+                            <p >Pressure : <span id="pressure"> 0 </span></p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer part -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

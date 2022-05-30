@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{!-- To use navbar template that is stored in partials --}}
+    {{>navbar}}
+
+
+    <div class="search">
+        <form class="temp_form">
+            <input class="input" type="text" name="" id="cityName" placeholder="Enter topic of your choice"
+                autocomplete="off">
+            <input type="submit" value="search" id="submitBtn">
+        </form>
+    </div>
+
+
+    <h1 class="heading"><span class="badge badge-secondary">Breaking News !!</span></h1>
+    <div class="newsContainer">
+        <h1>
+        </h1>
+        <div class="card">
+            <img class="card-img-top" src="images/imagesbg.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Stay updated with the world
+                </h5>
+                <p class="card-text">Get all the relevent news of your favourite topics.....
+                <a href="#" class="btn btn-primary">Search More</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer part -->
+    {{>footer}}
+    <script src="js/news.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gideon+Roman&family=Merriweather:wght@300&family=Syne+Mono&family=Ubuntu:wght@500&family=Yeon+Sung&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+
+:root {
+    --main-bg: black;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* 1rem=10px , this is because of above declared font size */
+    /* We use this one line code to make website responsive */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.outerContainer {
+    display: flex;
+}
+
+row {
+    margin: 0;
+}
+
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #0097e6;
+}
+
+.navbar-brand{
+    border-radius: 50%;
+    width: 35px;
+}
+
+
+.navbar-toggler {
+    background-color: grey;
+}
+
+
+/*show display */
+html {
+    scroll-behavior: smooth;
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.5)url('../images/bld.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    /* height: 200rem; */
+    min-height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainshow {
+    margin: 2rem auto;
+    width: 60vw;
+    height: 50vh;
+}
+
+.innerimages {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 2rem;
+    box-shadow: -2px -5px 5px #374654;
+}
+
+.bigshow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.weathershow {
+    margin: 3rem;
+    box-shadow: -2px -5px 5px #374654;
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.newsshow {
+    margin: 3rem;
+    box-shadow: -2px -5px 5px #374654;
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagesSize{
+    
+    height: 30rem;
+    width: 30rem;
+    border-radius: 3rem;
+    box-shadow: -2px -5px 5px #17191b;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,.3));
+}
+
+.paraweathershow{
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paraweathershow h1{
+    font-size: 3rem;
+}
+.paraweathershow p{
+    font-size: 1.5rem;
+}
+.paraweathershow button{
+    width: 13rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+
+
+.paranewsshow{
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.paranewsshow button{
+    width: 13rem;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+
+.paranewsshow h1{
+    font-size: 3rem;
+}
+.paranewsshow p{
+    font-size: 1.5rem;
+}
+
+
+.imagecontainer{
+    margin: 1rem auto;
+}
+
+
+/* error page style */
+.main_header_right button {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    border: 2px solid rgb(186, 178, 178);
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 1rem 0.6rem -0.6rem black;
+    background-color: rgb(230, 226, 226);
+}
+
+/* Footer code */
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height: 4rem;
+    font-size: 1.4rem;
+}
+
+
+
+/* responsive code */
+
+@media (max-width:760px) {
+
+    .temp_form {
+        width: auto;
+    }
+
+    .tempInformation {
+        width: auto;
+    }
+
+    .main_layer .middle_layer p,
+    .main_layer .middle_layer .fa {
+        font-size: 5rem;
+        font-weight: 900;
+    }
+    .bigshow {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{!-- To use navbar template that is stored in partials --}}
+    {{>navbar}}
+
+    <div class="aboutContainer">
+        <div class="aboutImg">
+            <figure>
+                <img src="images/about.jpg" alt="image" class="img-fluid" title="harsh">
+            </figure>
+        </div>
+        <div class="aboutText">
+            <p>Welcome to the forecaste app</p>
+            <h1>Hey! this is <span class="text_clr">Atishay </span> and I am a <span class="text_clr">MERN</span> stack
+                developer</h1>
+            <a href="/"><button>Go Back</button></a>
+        </div>
+    </div>
+    <!-- footer part -->
+    {{>footer}}
+</body>
+
+</html>
